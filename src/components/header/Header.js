@@ -1,5 +1,7 @@
 import React from 'react';
+import Burger from './Burger';
 import './header.scss';
+import RightNav from './RightNav';
 
 const Header = () => {
   return (
@@ -9,12 +11,7 @@ const Header = () => {
           <div className="logo">
             Rodermel & Valério Advogados
           </div>
-          <ul className='nav-items'>
-            <li>Home</li>
-            <li>Áreas de atuação</li>
-            <li>Sobre</li>
-            <li>Contato</li>
-          </ul>
+            <Burger />
         </nav>
       </header>
     </div>

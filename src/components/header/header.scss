@@ -1,22 +1,19 @@
 header {
   background-color: var(--black);
   .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
       .logo{
         color: var(--gold);
         font-weight: var(--fw-700);
       }
       .nav-items {
-        display: flex;
-        flex-direction: row;
+        flex-wrap: nowrap;
         color: var(--pale-gold);
         li {
           margin-right: 1.5rem;
           font-weight: 500;
+          cursor: pointer;
 
-          display: inline-block;
           background-image: linear-gradient(var(--pale-gold), var(--pale-gold));
           background-size: 0% 1.5px;
           background-repeat: no-repeat;
