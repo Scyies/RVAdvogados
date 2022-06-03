@@ -1,27 +1,47 @@
 header {
   background-color: var(--black);
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+  }
   .navbar {
     justify-content: space-between;
+    flex-direction: row;
+    @media screen and (min-width: 769px) {
+      display: flex;
+    }
       .logo{
-        color: var(--gold);
-        font-weight: var(--fw-700);
+        img {
+          max-width: 25rem;
+        }
+        @media screen and (max-width: 768px) {
+          max-width: 20rem;
+        }
       }
       .nav-items {
         flex-wrap: nowrap;
+        flex-direction: row;
+        align-self: center;
         color: var(--pale-gold);
         li {
           margin-right: 1.5rem;
-          font-weight: 500;
+          font-weight: 400;
           cursor: pointer;
+          display: inline-block;
 
           background-image: linear-gradient(var(--pale-gold), var(--pale-gold));
-          background-size: 0% 1.5px;
+          background-size: 0% 2px;
           background-repeat: no-repeat;
           transition: background-size 0.3s;
           background-position: 50% calc(100% - 0px);
         }
         li:hover {
-          background-size: 100% 1.5px;
+          background-size: 100% 2px;
+        }
+        @media screen and (max-width: 767px) {
+          display: none;
         }
       }
   }

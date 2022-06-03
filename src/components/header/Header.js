@@ -1,7 +1,7 @@
 import React from 'react';
 import Burger from './Burger';
 import './header.scss';
-import RightNav from './RightNav';
+import logo from '../../assets/logo-header.png';
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
       <header>
         <nav className="navbar container">
           <div className="logo">
-            Rodermel & Valério Advogados
+            <img src={logo} alt="" />
           </div>
             <Burger />
         </nav>

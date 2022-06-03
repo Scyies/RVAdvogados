@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './burger.scss';
-import RightNav from './RightNav';
 
 const Burger = () => {
 
@@ -20,10 +19,10 @@ const Burger = () => {
         <i className={status}></i>
       </div>
       <ul className={`nav-items${isActive ? '' : 'active'}`}>
-        <li>Home</li>
-        <li>Áreas de atuação</li>
-        <li>Sobre</li>
-        <li>Contato</li>
+        <li>HOME</li>
+        <li>ÁREAS DE ATUAÇÃO</li>
+        <li>SOBRE</li>
+        <li>CONTATO</li>
     </ul>
     </>
   )

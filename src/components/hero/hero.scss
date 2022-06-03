@@ -1,0 +1,26 @@
+.hero {
+  width: 100%;
+  background-color: var(--pale-gold);
+  color: var(--black);
+  position: relative;
+  height: calc(100vh - 6.25rem);
+  .main-image {
+    height: 50vh;
+    img {
+      height: calc(100vh - 6.25rem);
+      object-fit: cover;
+    }
+  }
+  .hero-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    .hero-content {
+      position: absolute;
+      background-color: rgba(241, 214, 171, 0.7);
+      padding: 1rem;
+      border-radius: 2px;
+    }
+  }
+}

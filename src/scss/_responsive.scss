@@ -48,18 +48,3 @@ $breakpoint-min: 769px;
     }
   }
 }
-
-@media screen and (min-width: $breakpoint-min) {
-  header {
-    .navbar {
-      display: flex;
-      flex-direction: row;
-      .nav-items {
-        flex-direction: row;
-        li {
-          display: inline-block;
-        }
-      }
-    }
-  }
-}

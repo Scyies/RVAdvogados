@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@100;600;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "DM Serif Display", serif;
+  font-family: "Roboto Slab", serif;
   line-height: 1;
   font-weight: var(--fw-400);
 }
@@ -14,17 +16,18 @@ h1,
   font-size: 6rem;
   position: relative;
   @media (max-width: 767px) {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   &::before {
     content: "";
     position: absolute;
     width: 10rem;
-    height: 2px;
-    top: -5rem;
+    // height: 2px;
+    // top: -5rem;
     background-color: var(--white);
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       display: none;
+      // esse before é aquele risquinho que eu tirei
     }
   }
 }

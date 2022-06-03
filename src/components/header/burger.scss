@@ -2,7 +2,7 @@
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 20px;
+  top: 30px;
   right: 20px;
   justify-content: space-around;
   flex-direction: column;
@@ -20,6 +20,7 @@
     transform: rotate(45deg) translateY(8px) translateX(1px);
   }
   .open:nth-child(2) {
+    transform: translateX(100%);
     opacity: 0;
   }
   .open:nth-child(3) {
@@ -30,6 +31,7 @@
     transform: rotate(0) translateY(0);
   }
   .close:nth-child(2) {
+    transform: translateX(0%);
     opacity: 1;
   }
   .close:nth-child(3) {
