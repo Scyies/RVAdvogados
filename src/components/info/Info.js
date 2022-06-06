@@ -1,17 +1,23 @@
 import React from 'react';
 import './info.scss';
-import dtoImg from '../../assets/Cards/dto-civil-card.jpg';
+import dtoCivilImg from '../../assets/Cards/dto-civil-card.jpg';
+import dtoAdmImg from '../../assets/Cards/dto-adm-card.jpg';
+import dtoConsumidorCard from '../../assets/Cards/dto-consumidor-card.jpg';
+import dtoFamiliaImg from '../../assets/Cards/dto-familia-card.jpg';
+import dtoPrevidenciarioImg from '../../assets/Cards/dto-prev-card.jpg';
+import dtoTrabalhoImg from '../../assets/Cards/dto-trab-card.jpg';
+import dtoSucessoesImg from '../../assets/Cards/dto-succ-card.jpg';
 
 const Info = () => {
   return (
-    <>
+    <section className="atuacao-wrapper">
       <div className="areas-text">
         <h2>ÁREAS DE ATUAÇÃO</h2>
       </div>
       <div className="cards-wrapper">
         <div className="card-dto">
           <div className="card-img">
-            <img src={dtoImg} alt="" />
+            <img src={dtoCivilImg} alt="" />
           </div>
           <div className="card-content">
             <p>Assessoria jurídica nas relações cíveis.</p>
@@ -19,7 +25,7 @@ const Info = () => {
         </div>
         <div className="card-dto">
           <div className="card-img">
-            <img src="" alt="" />
+            <img src={dtoAdmImg} alt="" />
           </div>
           <div className="card-content">
             <p>Assessoria jurídica em questões de direito administrativo.</p>
@@ -27,7 +33,7 @@ const Info = () => {
         </div>
         <div className="card-dto">
           <div className="card-img">
-            <img src="" alt="" />
+            <img src={dtoConsumidorCard} alt="" />
           </div>
           <div className="card-content">
             <p>Assessoria jurídica nas relações de direito do consumidor.</p>
@@ -35,7 +41,7 @@ const Info = () => {
         </div>
         <div className="card-dto">
           <div className="card-img">
-            <img src="" alt="" />
+            <img src={dtoFamiliaImg} alt="" />
           </div>
           <div className="card-content">
             <p>Assessoria jurídica nas relações de direito de família.</p>
@@ -43,7 +49,7 @@ const Info = () => {
         </div>
         <div className="card-dto">
           <div className="card-img">
-            <img src="" alt="" />
+            <img src={dtoPrevidenciarioImg} alt="" />
           </div>
           <div className="card-content">
             <p>Assessoria jurídica nas relações previdenciárias.</p>
@@ -51,7 +57,7 @@ const Info = () => {
         </div>
         <div className="card-dto">
           <div className="card-img">
-            <img src="" alt="" />
+            <img src={dtoTrabalhoImg} alt="" />
           </div>
           <div className="card-content">
             <p>Assessoria jurídica nas relações trabalhistas.</p>
@@ -59,14 +65,14 @@ const Info = () => {
         </div>
         <div className="card-dto">
           <div className="card-img">
-            <img src="" alt="" />
+            <img src={dtoSucessoesImg} alt="" />
           </div>
           <div className="card-content">
             <p>Assessoria jurídica nas relações sucessórias.</p>
           </div>
         </div>
       </div>
-    </>
+    </section>
   )
 }
 
