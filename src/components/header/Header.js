@@ -1,7 +1,7 @@
 import React from 'react';
 import Burger from './Burger';
 import './header.scss';
-import logo from '../../assets/logo-header.png';
+import logo from '../../assets/logo-header-Roboto.png';
 
 const Header = () => {
   return (

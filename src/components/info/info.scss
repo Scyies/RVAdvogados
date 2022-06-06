@@ -1,0 +1,28 @@
+.areas-text {
+  text-align: center;
+  padding: 3rem 0;
+  h2 {
+    font-weight: 700;
+  }
+}
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  .card-dto {
+    padding: 2rem;
+    aspect-ratio: 1 / 1;
+    height: 30%;
+    width: 30%;
+
+    @media screen and (max-width: 768px) {
+      width: 45%;
+      height: 45%;
+    }
+    @media screen and (max-width: 500px) {
+      width: 75%;
+      height: 75%;
+    }
+  }
+}
