@@ -1,5 +1,5 @@
 import React from 'react';
-import './info.scss';
+import './atuacao.scss';
 import dtoCivilImg from '../../assets/Cards/dto-civil-card.jpg';
 import dtoAdmImg from '../../assets/Cards/dto-adm-card.jpg';
 import dtoConsumidorCard from '../../assets/Cards/dto-consumidor-card.jpg';

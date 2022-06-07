@@ -1,5 +1,6 @@
 .atuacao-wrapper {
-  background-color: var(--pale-gold);
+  background-color: var(--white);
+  padding-bottom: 2rem;
   .areas-text {
     text-align: center;
     padding-bottom: 3rem;
@@ -29,13 +30,13 @@
       }
       .card-img {
         background-color: var(--black);
-        border: 2px solid var(--black);
         box-sizing: border-box;
         overflow: hidden;
+        box-shadow: 2px -2px 15px rgba(0, 0, 0, 0.3);
         img {
           height: 100%;
           width: 100%;
-          object-fit: cover;
+          object-fit: fill;
           transition: transform .5s;
           &:hover {
             transform: scale(1.2);
@@ -44,7 +45,7 @@
       }
       .card-content {
         background-color: var(--black);
-        border: 2px solid var(--black);
+        box-shadow: 2px -2px 15px rgba(0, 0, 0, 0.3);
         p {
           padding-left: .5rem;
           color: var(--white);

@@ -22,6 +22,7 @@ const Burger = () => {
         <li>HOME</li>
         <li>ÁREAS DE ATUAÇÃO</li>
         <li>SOBRE</li>
+        <li>EQUIPE</li>
         <li>CONTATO</li>
     </ul>
     </>
