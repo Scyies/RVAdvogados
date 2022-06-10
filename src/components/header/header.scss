@@ -24,14 +24,14 @@ header {
         flex-wrap: nowrap;
         flex-direction: row;
         align-self: center;
-        color: var(--pale-gold);
+        color: var(--gold);
         li {
           margin-right: 1.5rem;
           font-weight: 400;
           cursor: pointer;
           display: inline-block;
 
-          background-image: linear-gradient(var(--pale-gold), var(--pale-gold));
+          background-image: linear-gradient(var(--gold), var(--gold));
           background-size: 0% 2px;
           background-repeat: no-repeat;
           transition: background-size 0.3s;

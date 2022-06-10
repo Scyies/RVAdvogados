@@ -1,7 +1,7 @@
 import React from 'react';
+import Footer from '../../components/footer/Footer';
 import Hero from '../../components/hero/Hero';
 import Info from '../../components/info/Info';
-import Contact from '../../components/contact/Contact';
 import Sobre from '../../components/sobre/Sobre';
 import Team from '../../components/team/Team';
 
@@ -12,7 +12,6 @@ export default function Home() {
       <Info />
       <Sobre />
       <Team />
-      <Contact />
     </div>
   )
 }

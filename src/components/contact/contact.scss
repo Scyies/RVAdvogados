@@ -1,0 +1,34 @@
+.contact-wrapper {
+  background-color: var(--black);
+  color: var(--white);
+  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .contact-input {
+      padding: 15px;
+      margin: 10px 0px;
+    }
+    .contact-btn {
+      padding: 1rem;
+      margin: 1rem;
+      font-size: 16px;
+    }
+    span {
+      font-size: 12px;
+      padding: 3px;
+      color: red;
+      display: none;
+    }
+    .contact-input:invalid[focused="true"] ~ span {
+      display: block;
+    }
+  }
+}

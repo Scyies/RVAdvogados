@@ -24,22 +24,21 @@ $breakpoint-min: 769px;
         display: flex;
         flex-direction: column;
         width: 100%;
-        color: var(--pale-gold);
+        color: var(--gold);
         li {
-          // margin-right: 1.5rem;
           padding-top: 2rem;
           text-align: center;
           font-weight: 500;
           cursor: pointer;
 
-          background-image: linear-gradient(var(--pale-gold), var(--pale-gold));
-          background-size: 0% 1.5px;
+          background-image: linear-gradient(var(--gold), var(--gold));
+          background-size: 0% 2px;
           background-repeat: no-repeat;
           transition: background-size 0.3s;
           background-position: 50% calc(100% - 0px);
         }
         li:hover {
-          background-size: 100% 1.5px;
+          background-size: 100% 2px;
         }
       }
     }

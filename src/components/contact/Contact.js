@@ -1,9 +1,88 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './contact.scss';
+import {useState, useEffect} from 'react';
+import validate from './validadeInfo';
 
 const Contact = () => {
+  const [values, setValues] = useState({
+    nome:'',
+    email:'',
+    tel:'',
+    mensagem:''
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value })
+  }
+
+  const [focused, setFocused] = useState(false);
+
+  const handleFocus = (e) => {
+    setFocused(true);
+  }
+
+  console.log(values);
   return (
-    <div>Contact</div>
+    <div className='contact-wrapper container'>
+      <form onSubmit={handleSubmit}>
+          <legend>ENTRE EM CONTATO CONOSCO</legend>
+          <div className='contact-form'>
+            <label htmlFor="contact-nome">Nome</label>
+            <input type="text" 
+            id="contact-nome" 
+            name="nome" 
+            className="contact-input" 
+            placeholder="Seu nome completo"
+            onChange={onChange}
+            required
+            onBlur={handleFocus}
+            focused={focused.toString()}
+            />
+            <span>É necessário informar um nome!</span>
+          </div>
+          <div className='contact-form'>
+            <label htmlFor="contact-email">E-mail</label>
+            <input type="email" 
+            id="contact-email" 
+            className="contact-input" 
+            name="email" 
+            placeholder="Seu e-mail" 
+            onChange={onChange}
+            required
+            pattern='(\S+@\S+\.\S+)'
+            onBlur={handleFocus}
+            focused={focused.toString()}
+            />
+            <span>É necessário informar um e-mail!</span>
+          </div>
+          <div className='contact-form'>
+            <label htmlFor="contact-tel">Telefone</label>
+            <input type="tel" 
+            id="contact-tel" 
+            className="contact-input" 
+            name="tel" 
+            placeholder="Seu número de telefone"
+            onChange={onChange}
+            required
+            pattern='(\(?\d{2}\)?\s?)?(\d{4,5}\-?\d{4})'
+            onBlur={handleFocus}
+            focused={focused.toString()}
+            />
+            <span>É necessário infomar um número de telefone!</span>
+          </div>
+          <textarea name="mensagem" id="contact-text" cols="30" rows="10" 
+          onChange={onChange} 
+          onBlur={handleFocus}
+          focused={focused.toString()}
+          pattern='\d'></textarea>
+          <span>É necessário informar sua dúvida!</span>
+          <button className='contact-btn' type='submit'>Enviar</button>
+      </form>
+    </div>
   )
 }
 
