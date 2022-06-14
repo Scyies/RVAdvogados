@@ -14,9 +14,16 @@ $breakpoint-min: 769px;
         display: none;
         flex-direction: column;
         width: 100%;
+        a {
+          text-decoration: none !important;
+          color: var(--gold) !important;
+        }
         li {
           padding-top: 2rem;
           text-align: center;
+          text-decoration: none;
+          color: var(--gold); 
+          font-weight: 700;
         }
       }
       .nav-itemsactive {
@@ -25,6 +32,9 @@ $breakpoint-min: 769px;
         flex-direction: column;
         width: 100%;
         color: var(--gold);
+        a {
+          text-decoration: none;
+        }
         li {
           padding-top: 2rem;
           text-align: center;

@@ -25,10 +25,14 @@ const Contact = () => {
     setFocused(true);
   }
 
+  const validate = (values) => {
+
+  }
+
   console.log(values);
   return (
-    <div className='contact-wrapper container'>
-      <form onSubmit={handleSubmit}>
+    <div className='contact-wrapper container' id='contato'>
+      <form action="https://formspree.io/f/xpzbnjzj" method="POST">
           <legend>ENTRE EM CONTATO CONOSCO</legend>
           <div className='contact-form'>
             <label htmlFor="contact-nome">Nome</label>
@@ -74,13 +78,16 @@ const Contact = () => {
             />
             <span>É necessário infomar um número de telefone!</span>
           </div>
-          <textarea name="mensagem" id="contact-text" cols="30" rows="10" 
+          <textarea name="mensagem" id="contact-text" cols="20" rows="5"
+          placeholder='Envie sua mensagem!' 
           onChange={onChange} 
           onBlur={handleFocus}
           focused={focused.toString()}
           pattern='\d'></textarea>
           <span>É necessário informar sua dúvida!</span>
-          <button className='contact-btn' type='submit'>Enviar</button>
+          <div className="btn-wrapper">
+            <button className='contact-btn' type='submit'>Enviar</button>
+          </div>
       </form>
     </div>
   )

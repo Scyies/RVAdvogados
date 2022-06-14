@@ -4,7 +4,7 @@ import placeholder from '../../assets/parede.jpeg'
 
 const Team = () => {
   return (
-    <div className='team-wrapper'>
+    <div className='team-wrapper' id='equipe'>
       <div className="team-card">
         <img src={placeholder} alt="" />
         <p className='team-nome'>Bianca Valério</p>

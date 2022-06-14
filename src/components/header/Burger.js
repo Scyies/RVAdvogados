@@ -19,11 +19,21 @@ const Burger = () => {
         <i className={status}></i>
       </div>
       <ul className={`nav-items${isActive ? '' : 'active'}`}>
-        <li>HOME</li>
-        <li>ÁREAS DE ATUAÇÃO</li>
-        <li>SOBRE</li>
-        <li>EQUIPE</li>
-        <li>CONTATO</li>
+        <a href='#home'>
+          <li>HOME</li>
+        </a>
+        <a href="#atuacao">
+          <li>ÁREAS DE ATUAÇÃO</li>
+        </a>
+        <a href="#sobre">
+          <li>SOBRE</li>
+        </a>
+        <a href="#equipe">
+          <li>EQUIPE</li>
+        </a>
+        <a href="#contato">
+          <li>CONTATO</li>
+        </a>
     </ul>
     </>
   )

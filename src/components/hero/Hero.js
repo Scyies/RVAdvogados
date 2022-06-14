@@ -4,7 +4,7 @@ import './hero.scss';
 const Hero = () => {
   return (
     <>
-      <div className="hero">
+      <div className="hero" id='home'>
         <div className="main-image">
           <picture>
             {/* <source media="(min-width: 767px)" srcset="" /> */}

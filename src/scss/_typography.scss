@@ -16,7 +16,10 @@ h1,
   font-size: 6rem;
   position: relative;
   @media (max-width: 767px) {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 3rem;
   }
   &::before {
     content: "";
