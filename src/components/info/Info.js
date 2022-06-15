@@ -14,11 +14,15 @@ const Info = () => {
   const [popUpBtn, setPopUp] = useState(false);
   const popUp = () => {
     setPopUp(true)
+    console.log('sim');
+  }
+  const closePopUp = () => {
+    setPopUp(false)
   }
 
   return (
     <section className="atuacao-wrapper" id='atuacao'>
-      <InfoPop  trigger={popUpBtn} setTrigger={setPopUp}/>
+      <InfoPop  open={popUpBtn} close={closePopUp}/>
       <div className="areas-text">
         <h2>ÁREAS DE ATUAÇÃO</h2>
       </div>
