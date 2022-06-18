@@ -63,9 +63,12 @@ header {
   align-items: center;
   transform: translateY(-100%);
   transition: all ease-in-out .3s;
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
   li {
     padding: 1rem;
-    padding-bottom: .75rem;
+    padding-bottom: .25rem;
     text-align: center;
     cursor: pointer;
 
