@@ -18,7 +18,7 @@ const Burger = () => {
         <i className={status}></i>
         <i className={status}></i>
       </div>
-      <ul className={`nav-items${isActive ? '' : 'active'}`}>
+      <ul className={`burger-items ${isActive ? '' : 'active'}`}>
         <a href='#home'>
           <li>HOME</li>
         </a>
@@ -34,7 +34,7 @@ const Burger = () => {
         <a href="#contato">
           <li>CONTATO</li>
         </a>
-    </ul>
+      </ul>
     </>
   )
 }

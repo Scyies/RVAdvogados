@@ -14,7 +14,6 @@ const Info = () => {
   const [popUpBtn, setPopUp] = useState(false);
   const popUp = () => {
     setPopUp(true)
-    console.log('sim');
   }
   const closePopUp = () => {
     setPopUp(false)

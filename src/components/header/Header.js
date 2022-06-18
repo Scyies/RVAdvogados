@@ -11,9 +11,26 @@ const Header = () => {
           <div className="logo">
             <img src={logo} alt="" />
           </div>
-            <Burger />
+          <ul className='nav-items'>
+            <a href='#home'>
+              <li>HOME</li>
+            </a>
+            <a href="#atuacao">
+              <li>ÁREAS DE ATUAÇÃO</li>
+            </a>
+            <a href="#sobre">
+              <li>SOBRE</li>
+            </a>
+            <a href="#equipe">
+              <li>EQUIPE</li>
+            </a>
+            <a href="#contato">
+              <li>CONTATO</li>
+            </a>
+          </ul>
         </nav>
       </header>
+      <Burger />
     </div>
   )
 }
