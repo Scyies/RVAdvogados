@@ -12,11 +12,11 @@ const InfoPop = (props) => {
 
   const closeBtn = () => {
     toggleClosed();
-    props.close(false);
+    props.close();
   }
 
   return (
-    <section className={isClosed ? 'pop-up closed': 'pop-up'}>
+    <section className={isClosed ? 'pop-up closed': 'pop-up open'}>
       <div className="pop-up-wrapper">
         <button onClick={closeBtn}>X</button>
         <div className="pop-up-text">

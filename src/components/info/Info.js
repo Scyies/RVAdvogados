@@ -15,7 +15,9 @@ const Info = () => {
   const [popUpState, updatePopUp] = useState();
 
   const atualizaPopUp = (props) => {
-    updatePopUp(<InfoPop close={closePopUp} titulo={props.popUpTittle} texto={props.popUpTxt}/>)
+    updatePopUp(<InfoPop close={closePopUp} 
+      titulo={props.popUpTittle} 
+      texto={props.popUpTxt}/>)
     document.body.style.overflow = 'hidden';
   }
 
@@ -27,7 +29,12 @@ const Info = () => {
       </div>
       <div className="cards-wrapper">
         {dataDB.map((cardTemplate, index) => (
-          <Card key={index} id={index} image={cardTemplate.img} descricao={cardTemplate.descricao} popUpTxt={cardTemplate.popUpTxt} popUpClick={atualizaPopUp} popUpTittle={cardTemplate.popUpTittle}/>
+          <Card key={index} id={index} 
+          image={cardTemplate.img} 
+          descricao={cardTemplate.descricao} 
+          popUpTxt={cardTemplate.popUpTxt} 
+          popUpClick={atualizaPopUp} 
+          popUpTittle={cardTemplate.popUpTittle}/>
         ))}
       </div>
     </section>

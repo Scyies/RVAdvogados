@@ -5,7 +5,7 @@ import logo from '../../assets/logo-header-Roboto.png';
 
 const Header = () => {
   return (
-    <div>
+    <div className='header'>
       <header>
         <nav className="navbar container">
           <div className="logo">

@@ -1,5 +1,6 @@
 import React from 'react'
 import './hero.scss';
+import { Parallax } from 'react-parallax';
 
 const Hero = () => {
   return (
