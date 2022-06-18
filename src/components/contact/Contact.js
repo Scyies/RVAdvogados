@@ -31,7 +31,8 @@ const Contact = () => {
 
   console.log(values);
   return (
-    <div className='contact-wrapper container' id='contato'>
+    <div className="contact">
+    <div className='contact-wrapper' id='contato'>
       <span className='line-contact'></span>
       <form action="https://formspree.io/f/xpzbnjzj" method="POST">
           <legend>ENTRE EM CONTATO CONOSCO</legend>
@@ -90,6 +91,7 @@ const Contact = () => {
             <button className='contact-btn' type='submit'>Enviar</button>
           </div>
       </form>
+    </div>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 {
   "name": "rv-landing-page",
   "version": "0.1.0",
-  "homepage": "https://scyies.github.io/react-gh-pages",
+  "homepage": "https://scyies.github.io/RVAdvogados",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

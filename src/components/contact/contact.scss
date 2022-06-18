@@ -1,9 +1,16 @@
-.contact-wrapper {
+.contact {
   background-color: var(--pale-gold);
+}
+.contact-wrapper {
   color: var(--black);
+  margin: auto;
+  max-width: 1280px;
+  width: 100%;
+  padding: 2rem;
   form {
-    // display: flex;
-    justify-content: flex-start;
+    background-color: var(--pale-gold);
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     legend {
       font-size: 20px;

@@ -1,20 +1,24 @@
 .sobre-wrapper {
-  display: flex;
   background-color: var(--black);
-  .sobre-text {
-    padding-left: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    h3 {
-      color: var(--white);
+  .sobre {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    .sobre-text {
+      padding-left: 3rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      h3 {
+        color: var(--white);
+      }
+      p {
+        color: var(--white);
+      }
     }
-    p {
-      color: var(--white);
+    .sobre-img {
+      padding-top: 5rem;
+      padding-right: 3rem;
+      padding-bottom: 5rem;
     }
-  }
-  .sobre-img {
-    padding-top: 5rem;
-    padding-right: 3rem;
-    padding-bottom: 5rem;
   }
 }

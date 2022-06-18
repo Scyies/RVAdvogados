@@ -7,6 +7,8 @@
     text-align: center;
     padding-bottom: 3rem;
     align-items: center;
+    max-width: 1280px;
+    margin: auto;
     .line-atuacao{
       height: 3px;
       background-color: var(--black);
@@ -29,6 +31,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1280px;
+    margin: auto;
     .card-dto {
       padding: 2rem;
       aspect-ratio: 1 / 1;
