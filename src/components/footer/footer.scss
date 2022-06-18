@@ -1,53 +1,65 @@
-.footer-wrapper {
+.wrapper {
   background-color: var(--black);
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 5rem;
-  @media screen and (min-width: 769px) {
-    flex-direction: row;
-  }
-  .footer-logo {
-    max-width: 50%;
-    margin-bottom: 3rem;
-    @media screen and (min-width: 769px) {
-      display: none;
+  .footer-wrapper {
+      background-color: var(--black);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 5rem;
+      padding-bottom: 0;
+      @media screen and (min-width: 769px) {
+        flex-direction: row;
+      }
+      .footer-logo {
+        max-width: 50%;
+        margin-bottom: 3rem;
+        @media screen and (min-width: 769px) {
+          display: none;
+        }
+      }
+      h5 {
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 2rem;
+      }
+      .footer-menu {
+        margin-bottom: 3rem;
+        line-height: 2rem;
+      }
+      .footer-contatos {
+        margin-bottom: 3rem;
+        line-height: 2rem;
+      }
+      .footer-atendimento {
+        max-width: 30%;
+        @media screen and (max-width: 768px) {
+          max-width: 100%;
+        }
+      }
     }
-  }
-  h5 {
-    font-size: 20px;
-    font-weight: 500;
-    padding-bottom: 2rem;
-  }
-  .footer-menu {
-    margin-bottom: 3rem;
-    line-height: 2rem;
-  }
-  .footer-contatos {
-    margin-bottom: 3rem;
-    line-height: 2rem;
-  }
-  .footer-atendimento {
-    max-width: 30%;
-    @media screen and (max-width: 768px) {
-      max-width: 100%;
-    }
-  }
 }
 .footer {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 3rem;
-  // background-color: rgb(29, 26, 26);
+  padding-top: 1rem;
   background-color: var(--black);
   img {
-    max-width: 15%;
+    max-width: 10%;
   }
   p {
     font-size: 12px;
     color: var(--white);
     text-align: center;
   }
+}
+
+.line-footer {
+  margin: 2rem;
+  align-self: center;
+  background-color: var(--gold);
+  width: 75%;
+  height: 3px;
 }

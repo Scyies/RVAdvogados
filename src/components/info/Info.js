@@ -25,7 +25,9 @@ const Info = () => {
     <section className="atuacao-wrapper" id='atuacao'>
       {popUpState}
       <div className="areas-text">
+        <span className='line-atuacao'></span>
         <h2>ÁREAS DE ATUAÇÃO</h2>
+        <span className='line-atuacao'></span>
       </div>
       <div className="cards-wrapper">
         {dataDB.map((cardTemplate, index) => (

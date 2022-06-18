@@ -7,10 +7,9 @@ import footerLogoText from '../../assets/logo-header-Roboto.png';
 
 const Footer = () => {
   return (
-    <>
+    <div className='wrapper'>
     <div className='footer-wrapper'>
       <div className="footer-logo">
-        {/* <img src={footerLogo} alt="" /> */}
         <img src={footerLogoText} alt="" />
       </div>
       <div className="footer-menu">
@@ -27,7 +26,6 @@ const Footer = () => {
         <h5>CONTATOS</h5>
         <ul>
           <li>
-          {/* <FontAwesomeIcon icon="fa-solid fa-phone" /> */}
             49 0000-0000
           </li>
           <li>49 9 0000-0000</li>
@@ -40,10 +38,11 @@ const Footer = () => {
       </div>
     </div>
     <footer className="footer">
+      <span className='line-footer'></span>
       <img src={footerLogo} alt="" />
       <p>c Rodermel & Valério Advocacia. Todos os direitos reservados.</p>
     </footer>
-    </>
+    </div>
   )
 }
 

@@ -67,3 +67,12 @@
     }
   }
 }
+
+
+.line-contact {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  height: 4px;
+  margin: 2rem;
+}

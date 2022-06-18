@@ -10,9 +10,8 @@
   opacity: 1;
   z-index: 1000;
   overflow: auto;
-  transition: all 0.3s;
   animation-name: show;
-  animation-duration: .4s;
+  animation-duration: .3s;
 
   @keyframes show {
     from {
@@ -27,7 +26,7 @@
   }
   &.closed {
     animation-name: hide;
-    animation-duration: .4s;
+    animation-duration: .3s;
   }
 
   // @keyframes hide {
