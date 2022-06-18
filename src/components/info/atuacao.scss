@@ -34,6 +34,7 @@
       aspect-ratio: 1 / 1;
       height: 30%;
       width: 30%;
+      cursor: pointer;
   
       @media screen and (max-width: 768px) {
         width: 45%;
@@ -60,9 +61,8 @@
       }
       .card-content {
         background-color: var(--black);
-        box-shadow: 2px -2px 15px rgba(0, 0, 0, 0.3);
         p {
-          padding-left: .5rem;
+          padding: .25rem;
           color: var(--white);
           text-align: center;
         }

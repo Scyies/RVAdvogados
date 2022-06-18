@@ -26,10 +26,27 @@
       .footer-menu {
         margin-bottom: 3rem;
         line-height: 2rem;
+        .menu-info {
+          padding: .25rem;
+        }
       }
       .footer-contatos {
         margin-bottom: 3rem;
         line-height: 2rem;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          li {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            .icon {
+              margin-bottom: .72rem;
+              margin-right: .50rem;
+            }
+          }
+        }
       }
       .footer-atendimento {
         max-width: 30%;

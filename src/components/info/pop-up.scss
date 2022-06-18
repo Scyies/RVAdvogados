@@ -53,7 +53,8 @@
     button {
       position: fixed;
       top: 15%;
-      right: 17rem;
+      margin-right: 2rem;
+      right: 35%;
       font-size: 2rem;
       font-weight: 700;
       color: var(--white);
@@ -62,8 +63,6 @@
       cursor: pointer;
       @media screen and (max-width: 500px) {
         right: 1rem;
-        font-size: 2rem;
-        top: 15%;
       }
     }
     .pop-up-img {
@@ -80,7 +79,7 @@
       }
     }
     .pop-up-text {
-      padding-top: 10rem;
+      padding-top: 16rem;
       padding-left: 2rem;
       h2 {
         color: var(--white);
