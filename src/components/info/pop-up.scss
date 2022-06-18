@@ -2,25 +2,56 @@
   background-color: var(--black);
   position: fixed;
   top: 0;
-  left: 100%;
+  left: 0;
   right: 0;
   bottom: 0;
   color: var(--white);
   padding: 0;
-  opacity: 0;
+  opacity: 1;
   z-index: 1000;
   overflow: auto;
-  transition: left 0.3s, opacity 0.3s;
+  transition: all 0.3s;
+  animation-name: show;
+  animation-duration: .4s;
 
-  &.active {
-    left: 0;
-    opacity: 0.99;
+  @keyframes show {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    
   }
+  &.closed {
+    animation-name: hide;
+    animation-duration: .4s;
+  }
+
+  @keyframes hide {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    
+  }
+
+  // &.active {
+  //   left: 0;
+  //   opacity: 0.99;
+  // }
 
   .pop-up-wrapper{
     display: flex;
     height: 100vh;
     width: 100%;
+    justify-content: space-between;
     button {
       position: fixed;
       top: 15%;
@@ -38,6 +69,9 @@
       }
     }
     .pop-up-img {
+      align-self: flex-end;
+      max-width: 30%;
+      height: 100%;
       img {
         height: 100%;
         object-fit: cover;

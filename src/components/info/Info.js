@@ -6,26 +6,28 @@ import data from '../../data/data.json';
 import Card from './Card';
 
 const Info = () => {
-  const [popUpBtn, setPopUp] = useState(false);
-  const popUp = (event) => {
-    const eventId = event.currentTarget.getAttribute('data-id');
-    console.log(eventId);
-    setPopUp(true)
-  }
   const closePopUp = () => {
-    setPopUp(false)
+    document.body.style.overflow = 'unset';
+    updatePopUp();
   }
   const dataDB = data.data
 
+  const [popUpState, updatePopUp] = useState();
+
+  const atualizaPopUp = (props) => {
+    updatePopUp(<InfoPop close={closePopUp} titulo={props.popUpTittle} texto={props.popUpTxt}/>)
+    document.body.style.overflow = 'hidden';
+  }
+
   return (
     <section className="atuacao-wrapper" id='atuacao'>
-      <InfoPop open={popUpBtn} close={closePopUp} titulo={dataDB[0].popUpTittle} texto={dataDB[0].popUpTxt}/>
+      {popUpState}
       <div className="areas-text">
         <h2>ÁREAS DE ATUAÇÃO</h2>
       </div>
       <div className="cards-wrapper">
         {dataDB.map((cardTemplate, index) => (
-          <Card key={index} id={index} image={cardTemplate.img} descricao={cardTemplate.descricao} popUpTxt={cardTemplate.popUpTxt} popUpClick={popUp}/>
+          <Card key={index} id={index} image={cardTemplate.img} descricao={cardTemplate.descricao} popUpTxt={cardTemplate.popUpTxt} popUpClick={atualizaPopUp} popUpTittle={cardTemplate.popUpTittle}/>
         ))}
       </div>
     </section>
