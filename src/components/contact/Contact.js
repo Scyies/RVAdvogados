@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import './contact.scss';
 import {useState, useEffect} from 'react';
-import validate from './validadeInfo';
 
 const Contact = () => {
   const [values, setValues] = useState({
@@ -11,22 +10,32 @@ const Contact = () => {
     mensagem:''
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  }
-
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value })
   }
 
-  const [focused, setFocused] = useState(false);
+  const [focusNome, setFocusNome] = useState(false);
 
-  const handleFocus = (e) => {
-    setFocused(true);
+  const handleFocusNome = (e) => {
+    setFocusNome(true);
   }
 
-  const validate = (values) => {
+  const [focusEmail, setFocusEmail] = useState(false);
 
+  const handleFocusEmail = (e) => {
+    setFocusEmail(true);
+  }
+
+  const [focusTel, setFocusTel] = useState(false);
+
+  const handleFocusTel = (e) => {
+    setFocusTel(true);
+  }
+
+  const [focusMesag, setFocusMesag] = useState(false);
+
+  const handleFocusMesag = (e) => {
+    setFocusMesag(true);
   }
 
   console.log(values);
@@ -45,8 +54,8 @@ const Contact = () => {
             placeholder="Seu nome completo"
             onChange={onChange}
             required
-            onBlur={handleFocus}
-            focused={focused.toString()}
+            onBlur={handleFocusNome}
+            focused={focusNome.toString()}
             />
             <span>É necessário informar um nome!</span>
           </div>
@@ -60,8 +69,8 @@ const Contact = () => {
             onChange={onChange}
             required
             pattern='(\S+@\S+\.\S+)'
-            onBlur={handleFocus}
-            focused={focused.toString()}
+            onBlur={handleFocusEmail}
+            focused={focusEmail.toString()}
             />
             <span>É necessário informar um e-mail!</span>
           </div>
@@ -75,17 +84,17 @@ const Contact = () => {
             onChange={onChange}
             required
             pattern='(\(?\d{2}\)?\s?)?(\d{4,5}\-?\d{4})'
-            onBlur={handleFocus}
-            focused={focused.toString()}
+            onBlur={handleFocusTel}
+            focused={focusTel.toString()}
             />
             <span>É necessário infomar um número de telefone!</span>
           </div>
           <textarea name="mensagem" id="contact-text" cols="20" rows="5"
-          placeholder='Envie sua mensagem!' 
-          onChange={onChange} 
-          onBlur={handleFocus}
-          focused={focused.toString()}
-          pattern='\d'></textarea>
+            placeholder='Envie sua mensagem!' 
+            onChange={onChange} 
+            onBlur={handleFocusMesag}
+            focused={focusMesag.toString()}
+            pattern='\d\g'></textarea>
           <span>É necessário informar sua dúvida!</span>
           <div className="btn-wrapper">
             <button className='contact-btn' type='submit'>Enviar</button>
