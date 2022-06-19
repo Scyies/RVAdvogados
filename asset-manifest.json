@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RVAdvogados/static/css/main.81636b4d.css",
-    "main.js": "/RVAdvogados/static/js/main.78490d9e.js",
+    "main.js": "/RVAdvogados/static/js/main.ee2ffe4f.js",
     "static/media/Layer 1.png": "/RVAdvogados/static/media/Layer 1.fa07c295bd3487842749.png",
     "static/media/paredecut.png": "/RVAdvogados/static/media/paredecut.d2322f83216f49f45639.png",
     "static/media/parede.jpeg": "/RVAdvogados/static/media/parede.c8e47fbb07c507fdba8c.jpeg",
@@ -9,10 +9,10 @@
     "static/media/footer logo.png": "/RVAdvogados/static/media/footer logo.270f534cd2eaaf957015.png",
     "index.html": "/RVAdvogados/index.html",
     "main.81636b4d.css.map": "/RVAdvogados/static/css/main.81636b4d.css.map",
-    "main.78490d9e.js.map": "/RVAdvogados/static/js/main.78490d9e.js.map"
+    "main.ee2ffe4f.js.map": "/RVAdvogados/static/js/main.ee2ffe4f.js.map"
   },
   "entrypoints": [
     "static/css/main.81636b4d.css",
-    "static/js/main.78490d9e.js"
+    "static/js/main.ee2ffe4f.js"
   ]
 }
